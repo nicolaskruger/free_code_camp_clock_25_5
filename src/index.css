@@ -1,3 +1,12 @@
+:root{
+  --background: #282a36;
+  --foreground: #f8f8f2;
+  --pink: #ff79c6;
+  --yellow: #f1fa8c;
+  --green: #50fa7b;
+  --orange: #ffb86c;
+  --red: #ff5555;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,8 +15,79 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+*{
+  box-sizing: border-box;
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-wrap: break-word;
+}
+.App__opers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.Opers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Oper__div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px
+}
+.Oper__num{
+  color: var(--green);
+}
+.Oper__label{
+  color: var(--orange);
+}
+.App{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Display{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Display__button{
+  display: flex;
+  gap: 10px;
+}
+#timer-label{
+  font-size: 25px;
+  color: var(--red);
+  margin: 20px 0;
+}
+#time-left{
+  font-size: 20px;
+  color: var(--pink);
+}
+button{
+  color: var(--yellow);
+  cursor: pointer;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#root{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
